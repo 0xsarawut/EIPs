@@ -138,8 +138,6 @@ Each EIP must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style
 
 `created`: *Date the EIP was created on*
 
-`requires`: *EIP number(s)* (Optional field)
-
 `withdrawal-reason`: *A sentence explaining why the EIP was withdrawn.* (Optional field, only needed when status is `Withdrawn`)
 
 Headers that permit lists must separate elements with commas.
@@ -185,12 +183,6 @@ The `category` header specifies the EIP's category. This is required for standar
 ### `created` header
 
 The `created` header records the date that the EIP was assigned a number. Both headers should be in yyyy-mm-dd format, e.g. 2001-08-14.
-
-### `requires` header
-
-EIPs may have a `requires` header, indicating the EIP numbers that this EIP depends on. If such a dependency exists, this field is required.
-
-A `requires` dependency is created when the current EIP cannot be understood or implemented without a concept or technical element from another EIP. Merely mentioning another EIP does not necessarily create such a dependency.
 
 ## Linking to External Resources
 
